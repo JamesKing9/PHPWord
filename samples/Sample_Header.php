@@ -3,7 +3,9 @@ require_once __DIR__ . '/../bootstrap.php';
 
 use PhpOffice\PhpWord\Settings;
 
-date_default_timezone_set('UTC');
+// date_default_timezone_set('UTC'); //协调世界时
+date_default_timezone_set('PRC'); //设置中华人民共和国时区
+
 error_reporting(E_ALL);
 define('CLI', (PHP_SAPI == 'cli') ? true : false);
 define('EOL', CLI ? PHP_EOL : '<br />');
